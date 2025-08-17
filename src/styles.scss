@@ -1,6 +1,43 @@
 $bg-grey: #EAEAEA;
+$bg-white: white;
+
+$font-active: black;
 $font-inactive: #7C7C7C;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("@/assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
 body {
-  font-family: sans-serif;
+background-color: $bg-grey;
+font-family: Poppins, "Comic Sans MS", cursive;
+font-weight: 400;
+font-size: 1.1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
 }

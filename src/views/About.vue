@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 img{
   transform-origin: top left;
   width: 900px;

@@ -9,10 +9,11 @@
   </div>
 </template>
 
-<style lang="scss">
-img{
+<style lang="scss" scoped>
+img {
   transform-origin: top left;
   width: 900px;
   height: auto;
 }
 </style>
+
