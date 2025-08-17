@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <img src="../../tierli.svg">
+  <img src="/tierli.svg">
   <div>Vera Müller</div>
   <div>Portfolio</div>
 </template>
