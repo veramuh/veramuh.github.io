@@ -4,39 +4,64 @@ import Logo from './views/Logo.vue'
 </script>
 
 <template>
-<div class="portfolio">
-<Logo></Logo>
-  <nav>
-    <div class="menu">
-    <RouterLink to="/projects">Projects</RouterLink>
-    <RouterLink to="/playground">Playground</RouterLink>
-    <RouterLink to="/about">About</RouterLink></div>
-  </nav>
-   <RouterView />
-</div>
+  <div class="outerWrap">
+    <div class="portfolio">
+      <div class="top">
+        <Logo></Logo>
+        <nav>
+          <RouterLink to="/projects">Projects</RouterLink>
+          <RouterLink to="/playground">Playground</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
-
-.portfolio {
-  margin-left: 1.8rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-right: 2rem;
+.outerWrap {
+  @extend .debug;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.menu {
-  position: absolute;
+.portfolio {
+  @extend .debug;
+  background-color: var(--bg-grey);
+  min-width: 30rem;
+  max-width: 60rem;
+  width: 70vw;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.top {
+  @extend .debug;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  @extend .debug;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  left: 0;
-  right: 0;
-  top: 3.4em;
-  gap: 1.3rem;
-  font-size: 1.9em;
-  padding-right: 2.5rem;
+  margin-top: 1.5rem;
+  gap: clamp(0.8rem, 1vw, 1.5em);
+  font-size: clamp(1rem, 2vw, 2em);
   padding-left: 1rem;
 }
-</style>
 
+RouterView {
+  @extend .debug;
+}
+
+.debug {
+  // border: 1px solid rgb(73, 135, 186);
+}
+</style>

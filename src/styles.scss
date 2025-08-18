@@ -1,4 +1,5 @@
 :root {
+  --bg-grey-outer: #383838;
   --bg-grey: #EAEAEA;
   --bg-white: white;
   --font-active: black;
@@ -47,14 +48,21 @@ a:hover {
 }
 a:active{
   color:var(--font-inactive);
-
 }
 
 body {
-background-color: var(--bg-grey);
-font-family: Poppins, "Comic Sans MS", cursive;
-font-weight: 400;
-font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: var(--bg-grey-outer);
+
+  font-family: Poppins, "Comic Sans MS", cursive;
+  font-weight: 400;
+  font-size: 62.5%;
 }
 
 h1 {

@@ -15,22 +15,22 @@
 <style lang="scss">
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .text {
   position: relative;
   left: 0.5rem;
-  top: 24px;
+  top: 0;
 
 }
 .name {
   font-weight: 500;
-  font-size: 1.9em;
+  font-size: clamp(1rem, 2vw, 2em);
 }
 
 .title{
   position: relative;
-  left: 0.2rem;
   font-size: 1.4em;
   opacity: 0.6;
 }
