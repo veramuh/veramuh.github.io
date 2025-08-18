@@ -1,18 +1,22 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <h1>About</h1> 
   <div>
     <img src="/layout/about.png">
   </div>
 </template>
 
 <style lang="scss" scoped>
-img{
+img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .4;
   transform-origin: top left;
   width: 900px;
   height: auto;
+  z-index: -1;
 }
 </style>
+

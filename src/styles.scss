@@ -1,8 +1,10 @@
-$bg-grey: #EAEAEA;
-$bg-white: white;
-
-$font-active: black;
-$font-inactive: #7C7C7C;
+:root {
+  --bg-grey: #EAEAEA;
+  --bg-white: white;
+  --font-active: black;
+  --font-inactive: #7C7C7C;
+  --red: rgb(255, 0, 195);
+}
 
 @font-face {
   font-family: "Poppins";
@@ -29,15 +31,33 @@ $font-inactive: #7C7C7C;
   src: url("@/assets/fonts/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
 }
+a
+{
+   text-decoration:none;
+}
+a:link{
+  color:var(--font-inactive);
+}
+a:visited{
+  color:var(--font-inactive);
+  text-decoration: none;
+}
+a:hover {
+  color:var(--font-active);
+}
+a:active{
+  color:var(--font-inactive);
+
+}
 
 body {
-background-color: $bg-grey;
+background-color: var(--bg-grey);
 font-family: Poppins, "Comic Sans MS", cursive;
 font-weight: 400;
-font-size: 1.1rem;
+font-size: 62.5%;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2em;
 }
