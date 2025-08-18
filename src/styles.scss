@@ -1,53 +1,58 @@
 :root {
   --bg-grey-outer: #383838;
-  --bg-grey: #EAEAEA;
+  --bg-grey: #eaeaea;
   --bg-white: white;
   --font-active: black;
-  --font-inactive: #7C7C7C;
+  --font-inactive: #7c7c7c;
   --red: rgb(255, 0, 195);
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("@/assets/fonts/Poppins-Light.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Light.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("@/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("@/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("@/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("@/assets/fonts/Poppins-Black.ttf") format("truetype");
+  src: url("./assets/fonts/Poppins-Black.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
 }
-a
-{
-   text-decoration:none;
+
+a {
+  text-decoration: none;
 }
-a:link{
-  color:var(--font-inactive);
+a:link {
+  color: var(--font-inactive);
 }
-a:visited{
-  color:var(--font-inactive);
+a:visited {
+  color: var(--font-inactive);
   text-decoration: none;
 }
 a:hover {
-  color:var(--font-active);
+  color: var(--font-active);
 }
-a:active{
-  color:var(--font-inactive);
+a:active {
+  color: var(--font-inactive);
 }
 
 body {
