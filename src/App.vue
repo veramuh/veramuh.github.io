@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Logo from './views/Logo.vue'
 
+
 </script>
 
 <template>
@@ -62,6 +63,6 @@ RouterView {
 }
 
 .debug {
-  // border: 1px solid rgb(73, 135, 186);
+  border: 0px solid rgb(73, 135, 186);
 }
 </style>
