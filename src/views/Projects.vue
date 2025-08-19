@@ -7,17 +7,18 @@ import Project from '../components/ProjectTile.vue';
 <template>
   <div class="page">
     <img src="/layout/projects.png">
-    <Project link="www.lorempicsum.com" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <Project link="/lilu26" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </Project>
-    <Project :border="1" link="www.lorempicsum.com" title="Projektname" subtitle="Untertitel" :image="liluImg">
+    <Project :border="1" link="/lilu26" title="Projektname" subtitle="Untertitel" :image="liluImg">
     </Project>
-    <Project link="www.lorempicsum.com" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <Project link="/lilu26" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </Project>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .page {
+  color: black;
   margin-top: 2rem;
   background-color: var(--bg-white);
   position: relative;

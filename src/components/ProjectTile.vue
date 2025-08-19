@@ -11,7 +11,8 @@ defineProps<{
 <template>
     <div class="wrapper">
         <div class="tile" :style="{ borderWidth: border ? border + 'px' : '0' }">
-            <img :src="image" />
+            <!-- <img :src="image" @click="$router.push('/lilu26')" /> -->
+            <img :src="image" @click="$router.push(link ? link : '')" />
         </div>
         <div class="title">{{ title }}</div>
         <div class="subtitle">{{ subtitle }}</div>
@@ -20,7 +21,8 @@ defineProps<{
 
 <style lang="scss" scoped>
 .wrapper {
-    margin-top: 2rem;
+    color: black;
+    margin-top: 2.3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -55,15 +57,7 @@ img:hover {
 
 .title {
     // @extend .debug;
-    margin-top: 0.5vh;
-    font-weight: 500;
-    font-size: 2.3em;
-}
-
-.subtitle {
-    // @extend .debug;
-    font-weight: 200;
-    font-size: 1.5em;
+    margin-top: 0.8vh;
 }
 
 .debug {

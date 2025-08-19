@@ -4,15 +4,15 @@
 
 <template>
   <div class="logo">
-  <img src="/tierli.svg">
-  <div class="text">
-  <div class="name">Vera Müller</div>
-  <div class="title">Portfolio</div>
-  </div>
+    <img src="/tierli.svg">
+    <div class="text">
+      <div class="name">Vera Müller</div>
+      <div class="title">Portfolio</div>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .logo {
   display: flex;
   align-items: center;
@@ -24,15 +24,17 @@
   top: 0;
 
 }
+
 .name {
   font-weight: 500;
   font-size: clamp(1rem, 2vw, 2em);
 }
 
-.title{
+.title {
   position: relative;
   font-size: 1.4em;
   opacity: 0.6;
+  font-weight: 200;
 }
 
 img {
