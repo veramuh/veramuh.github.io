@@ -20,7 +20,11 @@ import Logo from './components/Logo.vue'
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+a {
+  text-decoration: none;
+}
+
 .outerWrap {
   @extend .debug;
   position: relative;

@@ -1,0 +1,17 @@
+{
+  "about": {
+    "en": {
+      "title": "Vera Müller",
+      "subtitle": "Motion Design, Code, Animation, Game Design",
+      "text": "Hey, I’m Vera and I like to create playful, interactive things. I’m based in Wädenswil, Switzerland.",
+      "contact": "Click to send mail"
+    },
+    "de": { "title": "...", "subtitle": "...", "text": "...", "contact": "..." }
+  },
+  "projects": {
+    "project1": {
+      "en": { "title": "test title", "description": "..." },
+      "de": { "title": "...", "description": "..." }
+    }
+  }
+}

@@ -3,7 +3,6 @@
 
 <template>
   <div class="page">
-    <img src="/layout/playground.png">
     <h1>playground</h1>
     <h1>test</h1>
     <h1>test</h1>

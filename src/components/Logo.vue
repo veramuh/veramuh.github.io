@@ -4,8 +4,8 @@
 
 <template>
   <div class="logo">
-    <img src="/tierli.svg">
-    <div class="text">
+    <img src=" /tierli.svg" @click="$router.push('/projects')" />
+    <div class=" text">
       <div class="name">Vera Müller</div>
       <div class="title">Portfolio</div>
     </div>
@@ -16,6 +16,7 @@
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .text {

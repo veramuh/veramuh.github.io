@@ -1,16 +1,36 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import texts from '../assets/txts.json'
+import me from '../assets/vera-01.png';
+
+const first = "hey.vera";
+const last = "mueller";
+const domain = "gmail";
+const suffix = "com";
+const snd = ref('');
+const href = ref('#');
+const lang = ref<'en' | 'de'>('en')
+
+function mailcombi() {
+  snd.value = `${first}.${last}@${domain}.${suffix}`;
+  href.value = `mailto:${snd.value}`;
+}
 </script>
 
 <template>
   <div class="page">
-    <img src="/layout/about.png">
-    <h1>about</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
+    <div class="about">
+      <img :src="me" alt="vera">
+      <div class="textblock">
+        <div class="title">{{ texts.about[lang].title }}</div>
+        <div class="subtitle">{{ texts.about[lang].subtitle }}</div>
+        <div class="divider-line"></div>
+        <div class="text">{{ texts.about[lang].text }}</div>
+        <div class="divider-small"></div>
+        <a :href="href" target="_blank" @click="mailcombi">{{ snd || texts.about[lang].contact }}</a>
+      </div>
+      <div class="divider-medium"></div>
+    </div>
   </div>
 </template>
 
@@ -18,21 +38,25 @@
 .page {
   margin-top: 2rem;
   background-color: var(--bg-white);
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transform-origin: top left;
-  width: 900px;
+.about {
+  padding-top: 2rem;
+  width: 35vw;
+  max-width: 800px;
+  min-width: 350px;
   height: auto;
-  z-index: 2;
-  pointer-events: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.textblock {
+  padding-top: 1.5rem;
 }
 </style>

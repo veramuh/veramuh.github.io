@@ -10,9 +10,8 @@ defineProps<{
 
 <template>
     <div class="wrapper">
-        <div class="tile" :style="{ borderWidth: border ? border + 'px' : '0' }">
-            <!-- <img :src="image" @click="$router.push('/lilu26')" /> -->
-            <img :src="image" @click="$router.push(link ? link : '')" />
+        <div class="tile" :style="{ borderWidth: border ? border + 'px' : '0' }"><img :src="image"
+                @click="$router.push(link ? link : '')" />
         </div>
         <div class="title">{{ title }}</div>
         <div class="subtitle">{{ subtitle }}</div>
@@ -41,6 +40,7 @@ defineProps<{
     border-style: solid;
     border-color: var(--bg-grey);
     overflow: hidden;
+    cursor: pointer;
 }
 
 img {

@@ -39,7 +39,7 @@
 }
 
 a {
-  text-decoration: none;
+  font-size: 1.4em;
 }
 a:link {
   color: var(--font-inactive);
@@ -78,5 +78,30 @@ body {
 
 .subtitle {
   font-weight: 200;
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.divider-line {
+  margin-top: 1.5rem;
+  width: 20vw;
+  height: 1px;
+  background-color: var(--bg-grey);
+  margin-bottom: 1.5rem;
+}
+
+.divider-small {
+  margin-top: 1.5rem;
+}
+
+.divider-medium {
+  margin-top: 2rem;
+}
+
+.divider-big {
+  margin-top: 3rem;
 }
