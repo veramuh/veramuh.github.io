@@ -8,7 +8,7 @@ import ProjectTile from '../components/ProjectTile.vue';
   <div class="page">
     <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>
-    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
+    <ProjectTile border:4 link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
     </ProjectTile>
     <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>

@@ -14,7 +14,7 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
         <div class="divider-line"></div>
         <div class="text">Text<br>Text<br>Text<br>Text<br>Text<br>Text</div>
         <div class="divider-small"></div>
-        <a href="http://url.ch/" target="_blank">link</a>
+        <a href="http://url.ch/" target="_blank">Link</a>
       </div>
       <div class="divider-small"></div>
       <div class="small-img-container">

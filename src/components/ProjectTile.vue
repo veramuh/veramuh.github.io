@@ -57,7 +57,8 @@ img:hover {
 
 .title {
     // @extend .debug;
-    margin-top: 0.8vh;
+    margin-top: 1rem;
+    ;
 }
 
 .debug {

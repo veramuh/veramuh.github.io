@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="logo">
-    <img src=" /tierli.svg" @click="$router.push('/projects')" />
+  <div class="logo" @click="$router.push('/projects')">
+    <img src="/tierli.svg" />
     <div class=" text">
       <div class="name">Vera Müller</div>
       <div class="portfolio">Portfolio</div>
@@ -14,19 +14,22 @@
 
 <style lang="scss" scoped>
 .logo {
-  width: 100%;
   display: flex;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
   cursor: pointer;
 }
 
 .text {
-  position: relative;
+  padding-left: 0.4rem;
   left: 0.5rem;
   top: 0;
+  user-select: none;
 }
 
 .name {
+  white-space: nowrap;
   font-weight: 500;
   font-size: 1.1rem;
 }
