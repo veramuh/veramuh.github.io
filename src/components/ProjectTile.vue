@@ -32,7 +32,7 @@ defineProps<{
 .tile {
     // @extend .debug;
     width: 40vw;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 700px;
     height: 35vw;
     max-height: 300px;

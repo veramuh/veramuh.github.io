@@ -84,7 +84,6 @@ img {
 }
 
 .small-img-container {
-  @extend .debug;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -99,10 +98,9 @@ img {
   max-width: 300px;
   height: 12vw;
   max-height: 160px;
-  border: 1px black solid;
+  border: 1px black;
   overflow: hidden;
   border-color: var(--bg-grey-mid);
-
 }
 
 .credits {
@@ -113,9 +111,5 @@ img {
 .credit {
   padding-bottom: 2rem;
   padding-right: 3rem;
-}
-
-.debug {
-  border: 0px solid rgb(241, 186, 21);
 }
 </style>

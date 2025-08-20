@@ -8,7 +8,7 @@ import ProjectTile from '../components/ProjectTile.vue';
   <div class="page">
     <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>
-    <ProjectTile border:4 link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
+    <ProjectTile :border="1" link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
     </ProjectTile>
     <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>
@@ -19,9 +19,10 @@ import ProjectTile from '../components/ProjectTile.vue';
 <style lang="scss" scoped>
 .page {
   color: black;
+  width: 100%;
   margin-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: auto;
+  padding-right: auto;
   background-color: var(--bg-white);
   position: relative;
   display: flex;
@@ -29,5 +30,7 @@ import ProjectTile from '../components/ProjectTile.vue';
   align-items: center;
   padding-bottom: 6rem;
   z-index: 1;
+  box-sizing: border-box;
+
 }
 </style>

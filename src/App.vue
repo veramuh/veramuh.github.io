@@ -39,13 +39,9 @@ a {
 .portfolio {
   @extend .debug;
   background-color: var(--bg-grey-mid);
-  min-width: 30rem;
   max-width: 60rem;
-  width: 70vw;
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  width: 100%;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
@@ -62,17 +58,20 @@ nav {
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
   gap: clamp(0.5rem, 1vw, 1.5rem);
   font-size: clamp(0.8rem, 1.2vw, 1.2rem);
   padding-left: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   nav {
     flex-direction: column;
     gap: 0.2rem;
     align-items: end;
+  }
+
+  .portfolio {
+    padding: 1rem;
   }
 }
 
