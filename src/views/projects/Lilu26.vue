@@ -72,7 +72,7 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
   max-height: 300px;
   min-height: 200px;
   border-style: solid;
-  border-color: var(--bg-grey);
+  border-color: var(--bg-grey-mid);
   overflow: hidden;
 }
 

@@ -8,7 +8,7 @@ import Logo from './components/Logo.vue'
   <div class="outerWrap">
     <div class="portfolio">
       <div class="top">
-        <Logo></Logo>
+        <Logo class="logo"></Logo>
         <nav>
           <RouterLink to="/projects">Projects</RouterLink>
           <RouterLink to="/playground">Playground</RouterLink>
@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  @extend .debug;
+}
+
 .outerWrap {
   @extend .debug;
   position: relative;
@@ -34,7 +38,7 @@ a {
 
 .portfolio {
   @extend .debug;
-  background-color: var(--bg-grey);
+  background-color: var(--bg-grey-mid);
   min-width: 30rem;
   max-width: 60rem;
   width: 70vw;
@@ -56,10 +60,20 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 1.5rem;
-  gap: clamp(0.8rem, 1vw, 1.5em);
-  font-size: clamp(1rem, 2vw, 2em);
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: clamp(0.5rem, 1vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
   padding-left: 1rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: end;
+  }
 }
 
 RouterView {

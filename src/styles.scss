@@ -1,9 +1,10 @@
 :root {
-  --font-active: black;
   --bg-grey-outer: #383838;
-  --bg-grey: #eaeaea;
+  --bg-grey-mid: #eaeaea;
   --bg-white: white;
   --font-inactive: #7c7c7c;
+  --font-active: black;
+  --text: black;
   --red: rgb(255, 0, 195);
 }
 
@@ -38,9 +39,6 @@
   font-weight: 900;
 }
 
-a {
-  font-size: 1.2rem;
-}
 a:link {
   color: var(--font-inactive);
 }
@@ -73,12 +71,12 @@ body {
 .title {
   font-weight: 600;
   font-size: 1.6rem;
-  color: var(--font-active);
+  color: var(--text);
 }
 .title2 {
   font-weight: 600;
   font-size: 1.4rem;
-  color: var(--font-active);
+  color: var(--text);
 }
 
 .subtitle {
@@ -99,7 +97,7 @@ body {
   margin-top: 1.5rem;
   width: 20vw;
   height: 1px;
-  background-color: var(--bg-grey);
+  background-color: var(--bg-grey-mid);
   margin-bottom: 1.5rem;
 }
 
