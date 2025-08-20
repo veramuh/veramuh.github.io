@@ -27,7 +27,7 @@ function mailcombi() {
         <div class="divider-line"></div>
         <div class="text">{{ texts.about[lang].text }}</div>
         <div class="divider-small"></div>
-        <a :href="href" target="_blank" @click="mailcombi">{{ snd || texts.about[lang].contact }}</a>
+        <a :href="href" class="text" target="_blank" @click="mailcombi">{{ snd || texts.about[lang].contact }}</a>
       </div>
       <div class="divider-medium"></div>
     </div>

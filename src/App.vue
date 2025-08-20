@@ -11,7 +11,7 @@ import Logo from './components/Logo.vue'
         <Logo class="logo"></Logo>
         <nav>
           <RouterLink to="/projects">Projects</RouterLink>
-          <RouterLink to="/playground">Playground</RouterLink>
+          <!-- <RouterLink to="/playground">Playground</RouterLink> -->
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>

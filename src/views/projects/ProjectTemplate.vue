@@ -18,8 +18,10 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
       </div>
       <div class="divider-small"></div>
       <div class="small-img-container">
-        <div class="big-img"><img :src="testImg"></img></div>
-        Placeholder for Small Images
+        <div class="small-img"><img :src="testImg"></img></div>
+        <div class="small-img"><img :src="testImg"></img></div>
+        <div class="small-img"><img :src="testImg"></img></div>
+        <div class="small-img"><img :src="testImg"></img></div>
       </div>
       <div class="divider-big"></div>
       <div class="title">Credits</div>
@@ -63,12 +65,13 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
 .center {
   margin-top: 2.3rem;
   width: 40vw;
-  min-width: 350px;
+  min-width: 300px;
   max-width: 700px;
 }
 
 .big-img {
-  height: 35vw;
+  width: 100%;
+  height: 36vw;
   max-height: 300px;
   min-height: 200px;
   border-style: solid;
@@ -77,8 +80,29 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
 }
 
 img {
-  width: 100%;
   object-fit: cover;
+}
+
+.small-img-container {
+  @extend .debug;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.small-img {
+  width: 18vw;
+  max-width: 300px;
+  height: 12vw;
+  max-height: 160px;
+  border: 1px black solid;
+  overflow: hidden;
+  border-color: var(--bg-grey-mid);
+
 }
 
 .credits {
@@ -89,5 +113,9 @@ img {
 .credit {
   padding-bottom: 2rem;
   padding-right: 3rem;
+}
+
+.debug {
+  border: 0px solid rgb(241, 186, 21);
 }
 </style>

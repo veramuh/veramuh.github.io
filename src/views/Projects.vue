@@ -6,12 +6,13 @@ import ProjectTile from '../components/ProjectTile.vue';
 
 <template>
   <div class="page">
-    <ProjectTile link="/lilu26" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>
-    <ProjectTile :border="1" link="/lilu26" title="Projektname" subtitle="Untertitel" :image="testImg">
+    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
     </ProjectTile>
-    <ProjectTile link="/lilu26" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
     </ProjectTile>
+
   </div>
 </template>
 

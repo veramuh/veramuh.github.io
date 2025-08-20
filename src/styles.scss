@@ -68,6 +68,11 @@ body {
   font-size: 62.5%;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 .title {
   font-weight: 600;
   font-size: 1.6rem;
@@ -111,4 +116,8 @@ body {
 
 .divider-big {
   margin-top: 3rem;
+}
+
+.debug {
+  border: 0px solid rgb(73, 135, 186);
 }

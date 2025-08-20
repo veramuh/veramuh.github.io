@@ -3,7 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Projects from "../views/Projects.vue";
 import Playground from "../views/Playground.vue";
 import About from "../views/About.vue";
-import Lilu26 from "../views/projects/Lilu26.vue";
+import ProjectTemplate from "../views/projects/ProjectTemplate.vue";
 
 const routes = [
   // Fallback:
@@ -17,7 +17,11 @@ const routes = [
   { path: "/about", name: "About", component: About },
 
   // Project Pages
-  { path: "/lilu26", name: "Wobbly x Lilu", component: Lilu26 },
+  {
+    path: "/project-template",
+    name: "Project",
+    component: ProjectTemplate,
+  },
 ];
 
 const router = createRouter({
