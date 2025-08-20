@@ -59,7 +59,7 @@ import testImg from '../../assets/project-imgs/lilu26/lilu-sketch.jpg';
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 
 .center {

@@ -45,7 +45,8 @@ function mailcombi() {
 
 .about {
   padding-top: 2rem;
-  width: 35vw;
+  width: 40vw;
+  min-width: 300px;
   height: auto;
 }
 
