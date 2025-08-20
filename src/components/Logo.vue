@@ -7,7 +7,7 @@
     <img src=" /tierli.svg" @click="$router.push('/projects')" />
     <div class=" text">
       <div class="name">Vera Müller</div>
-      <div class="title">Portfolio</div>
+      <div class="portfolio">Portfolio</div>
     </div>
   </div>
 </template>
@@ -31,11 +31,11 @@
   font-size: clamp(1rem, 2vw, 2em);
 }
 
-.title {
+.portfolio {
   position: relative;
-  font-size: 1.4em;
-  opacity: 0.6;
   font-weight: 200;
+  font-size: clamp(1rem, 1.7vw, 2em);
+  color: var(--font-inactive);
 }
 
 img {

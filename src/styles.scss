@@ -39,7 +39,7 @@
 }
 
 a {
-  font-size: 1.4em;
+  font-size: 1.2rem;
 }
 a:link {
   color: var(--font-inactive);
@@ -72,18 +72,27 @@ body {
 
 .title {
   font-weight: 600;
-  font-size: 2.3em;
+  font-size: 1.6rem;
+  color: var(--font-active);
+}
+.title2 {
+  font-weight: 600;
+  font-size: 1.4rem;
   color: var(--font-active);
 }
 
 .subtitle {
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1.2rem;
 }
 
 .text {
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.2rem;
+}
+.text-bold {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .divider-line {
