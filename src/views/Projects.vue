@@ -5,7 +5,7 @@ import ProjectTile from '../components/ProjectTile.vue';
 const lang = ref<'en' | 'de'>('en')
 
 // Images //
-import jetpackImg from '../assets/project-imgs/jetpack-marshmallow.jpg';
+import jetpackImg from '../assets/project-imgs/jetpack-marshmallow/jetpack-marshmallow.jpg';
 import testImg from '../assets/project-imgs/lilu26/lilu-sketch.jpg';
 import frog0 from '../assets/project-imgs/hungry-frog/hungry-frog0.png'
 

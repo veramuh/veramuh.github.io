@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 const project = "projectTemplate";
 
-import testImg from '../../assets/project-imgs/jetpack-marshmallow.jpg'
+import testImg from '../../assets/project-imgs/jetpack-marshmallow/jetpack-marshmallow.jpg'
 import texts from '../../assets/txts.json';
 const lang = ref<'en' | 'de'>('en')
 </script>
