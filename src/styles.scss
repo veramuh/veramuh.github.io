@@ -155,6 +155,10 @@ img {
   border-color: var(--bg-grey-mid);
   overflow: hidden;
 }
+.big-vid {
+  @extend .big-img;
+  object-fit: cover;
+}
 
 .small-img-container {
   display: flex;

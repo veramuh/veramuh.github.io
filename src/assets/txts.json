@@ -1,8 +1,8 @@
 {
   "projectOverview": {
     "en": {
-      "title1": "Project Name",
-      "subtitle1": "Subtitle",
+      "title1": "Hungry Frog",
+      "subtitle1": "Mini Game",
       "title2": "Project Name",
       "subtitle2": "Subtitle",
       "title3": "Project Name",
@@ -49,6 +49,26 @@
         "creditTitle2": "Titel Credit2",
         "creditTitle3": "Titel Credit3",
         "creditTitle4": "Titel Credit4"
+      }
+    },
+    "hungryFrog": {
+      "en": {
+        "title": "Hungry Frog",
+        "subtitle": "Mini Game",
+        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. To win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
+        "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
+        "linkText": "Play Hungry Frog on itch.io",
+        "creditTitle1": "Game by",
+        "creditTitle2": "Sound Effects"
+      },
+      "de": {
+        "title": "Hungry Frog",
+        "subtitle": "Mini Game",
+        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. To win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
+        "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
+        "linkText": "Play Hungry Frog on itch.io",
+        "creditTitle1": "Game by",
+        "creditTitle2": "Sound Effects"
       }
     }
   }
