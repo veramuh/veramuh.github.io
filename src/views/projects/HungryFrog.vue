@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import frog1 from '../../assets/project-imgs/hungry-frog/hungry-frog1.png'
 import frog2 from '../../assets/project-imgs/hungry-frog/hungry-frog2.png'
 import frog3 from '../../assets/project-imgs/hungry-frog/hungry-frog3.png'
-import frog4 from '../../assets/project-imgs/hungry-frog/hungry-frog4.png'
+// import frog4 from '../../assets/project-imgs/hungry-frog/hungry-frog4.png'
 import frog5 from '../../assets/project-imgs/hungry-frog/hungry-frog5.png'
 import frogVid from '../../assets/project-imgs/hungry-frog/hungry-frog.mp4'
 import texts from '../../assets/txts.json';

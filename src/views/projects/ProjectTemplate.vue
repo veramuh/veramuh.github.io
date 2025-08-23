@@ -11,6 +11,9 @@ const lang = ref<'en' | 'de'>('en')
   <div class="page">
     <div class="center">
       <div class="big-img"><img :src="testImg"></img></div>
+      <!-- <video class="big-vid" autoplay loop muted playsinline>
+        <source :src="testVid" type="video/mp4" />
+      </video> -->
       <div class="divider-medium"></div>
       <div class="text">
         <div class="title">{{ texts.projects[project][lang].title }}</div>
