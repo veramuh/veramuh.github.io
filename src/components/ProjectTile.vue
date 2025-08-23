@@ -20,12 +20,10 @@ defineProps<{
 
 <style lang="scss" scoped>
 .wrapper {
-    color: black;
     margin-top: 2.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    width: 40vw;
+    min-width: 300px;
+    max-width: 700px;
 }
 
 
@@ -43,11 +41,6 @@ defineProps<{
     cursor: pointer;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
 img:hover {
     transform-origin: center;

@@ -68,55 +68,119 @@ body {
   font-size: 62.5%;
 }
 
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 6rem;
+  background-color: var(--bg-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 img {
   -webkit-user-drag: none;
   user-select: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .title {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
   color: var(--text);
 }
 .title2 {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 1.2vw, 1.2rem);
   color: var(--text);
 }
 
 .subtitle {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .text {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  white-space: pre-line;
 }
 .text-bold {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  white-space: pre-line;
 }
 
 .divider-line {
-  margin-top: 1.5rem;
+  margin-top: clamp(0.8rem, 1.5vw, 1.5rem);
   width: 20vw;
   height: 1px;
   background-color: var(--bg-grey-mid);
-  margin-bottom: 1.5rem;
+  margin-bottom: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 .divider-small {
-  margin-top: 1.5rem;
+  margin-top: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 .divider-medium {
-  margin-top: 2rem;
+  margin-top: clamp(1rem, 2vw, 2rem);
 }
 
 .divider-big {
-  margin-top: 3rem;
+  margin-top: clamp(1.2rem, 3vw, 3rem);
 }
+
+// Project Detail Page //
+.center {
+  margin-top: 2.3rem;
+  width: 40vw;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+.big-img {
+  width: 40vw;
+  min-width: 300px;
+  max-width: 700px;
+  height: 35vw;
+  max-height: 300px;
+  min-height: 200px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: var(--bg-grey-mid);
+  overflow: hidden;
+}
+
+.small-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.small-img {
+  width: 18vw;
+  max-width: 300px;
+  min-width: 140px;
+  height: 12vw;
+  max-height: 160px;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 1.8rem;
+}
+// Project Detail Page //
 
 .debug {
   border: 0px solid rgb(73, 135, 186);

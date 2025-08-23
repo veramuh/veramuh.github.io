@@ -9,9 +9,29 @@
     "de": { "title": "...", "subtitle": "...", "text": "...", "contact": "..." }
   },
   "projects": {
-    "project1": {
-      "en": { "title": "test title", "description": "..." },
-      "de": { "title": "...", "description": "..." }
+    "projectTemplate": {
+      "en": {
+        "title": "Project Name",
+        "subtitle": "Project Type",
+        "text": "Text\nText\nText",
+        "linkUrl": "http://url.ch/",
+        "linkText": "Link",
+        "creditTitle1": "Title Credit1",
+        "creditTitle2": "Title Credit2",
+        "creditTitle3": "Title Credit3",
+        "creditTitle4": "Title Credit4"
+      },
+      "de": {
+        "title": "Project Name",
+        "subtitle": "Project Type",
+        "text": "Text\nText\nText",
+        "linkUrl": "http://url.ch/",
+        "linkText": "Link",
+        "creditTitle1": "Titel Credit1",
+        "creditTitle2": "Titel Credit2",
+        "creditTitle3": "Titel Credit3",
+        "creditTitle4": "Titel Credit4"
+      }
     }
   }
 }

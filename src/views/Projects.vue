@@ -6,31 +6,13 @@ import ProjectTile from '../components/ProjectTile.vue';
 
 <template>
   <div class="page">
-    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <ProjectTile link="/project-template" title="Project Name" subtitle="Subtitle" :image="jetpackImg">
     </ProjectTile>
-    <ProjectTile :border="1" link="/project-template" title="Projektname" subtitle="Untertitel" :image="testImg">
+    <ProjectTile :border="1" link="/project-template" title="Project Name" subtitle="Subtitle" :image="testImg">
     </ProjectTile>
-    <ProjectTile link="/project-template" title="Projektname" subtitle="Untertitel" :image="jetpackImg">
+    <ProjectTile link="/project-template" title="Project Name" subtitle="Subtitle" :image="jetpackImg">
     </ProjectTile>
-
   </div>
 </template>
 
-<style lang="scss" scoped>
-.page {
-  color: black;
-  width: 100%;
-  margin-top: 2rem;
-  padding-left: auto;
-  padding-right: auto;
-  background-color: var(--bg-white);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 6rem;
-  z-index: 1;
-  box-sizing: border-box;
-
-}
-</style>
+<style lang="scss" scoped></style>

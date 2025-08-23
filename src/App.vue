@@ -30,18 +30,6 @@ function scrollToTop() {
 </template>
 
 <style lang="scss" scoped>
-.router-link-active {
-  color: var(--font-active);
-}
-
-a {
-  text-decoration: none;
-}
-
-.logo {
-  @extend .debug;
-}
-
 .outerWrap {
   @extend .debug;
   position: relative;
@@ -62,6 +50,18 @@ a {
   @extend .debug;
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  @extend .debug;
+}
+
+.router-link-active {
+  color: var(--font-active);
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
