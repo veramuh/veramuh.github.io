@@ -2,9 +2,9 @@ name: Build & Deploy Vue App
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -31,6 +31,9 @@ jobs:
 
       - name: Build project
         run: pnpm build
+
+      - name: Add CNAME
+        run: echo "www.vera-mueller.ch" > dist/CNAME
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
