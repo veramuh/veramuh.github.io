@@ -1,4 +1,22 @@
 {
+  "projectOverview": {
+    "en": {
+      "title1": "Project Name",
+      "subtitle1": "Subtitle",
+      "title2": "Project Name",
+      "subtitle2": "Subtitle",
+      "title3": "Project Name",
+      "subtitle3": "Subtitle"
+    },
+    "de": {
+      "title1": "Project Name",
+      "subtitle1": "Subtitle",
+      "title2": "Project Name",
+      "subtitle2": "Subtitle",
+      "title3": "Project Name",
+      "subtitle3": "Subtitle"
+    }
+  },
   "about": {
     "en": {
       "title": "Vera Müller",
