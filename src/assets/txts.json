@@ -1,31 +1,4 @@
 {
-  "projectOverview": {
-    "en": {
-      "title1": "Hungry Frog",
-      "subtitle1": "Mini Game",
-      "title2": "Project Name",
-      "subtitle2": "Subtitle",
-      "title3": "Project Name",
-      "subtitle3": "Subtitle"
-    },
-    "de": {
-      "title1": "Project Name",
-      "subtitle1": "Subtitle",
-      "title2": "Project Name",
-      "subtitle2": "Subtitle",
-      "title3": "Project Name",
-      "subtitle3": "Subtitle"
-    }
-  },
-  "about": {
-    "en": {
-      "title": "Vera Müller",
-      "subtitle": "Motion Design, Code, Animation, Game Design",
-      "text": "Hey, I’m Vera and I like to create playful, interactive things. I’m based in Wädenswil, Switzerland.",
-      "contact": "Click to send mail"
-    },
-    "de": { "title": "...", "subtitle": "...", "text": "...", "contact": "..." }
-  },
   "projects": {
     "projectTemplate": {
       "en": {
@@ -51,25 +24,84 @@
         "creditTitle4": "Titel Credit4"
       }
     },
+    "Lilu26": {
+      "en": {
+        "title": "Wobbly x Lilu",
+        "subtitle": "Interactive Installation",
+        "text": "Text\nText\nText",
+        "linkUrl": "https://lichtfestivalluzern.ch/en/",
+        "linkText": "Light Festival Lucerne",
+        "creditTitle1": "Title Credit1",
+        "creditTitle2": "Title Credit2",
+        "creditTitle3": "Title Credit3",
+        "creditTitle4": "Title Credit4"
+      },
+      "de": {
+        "title": "Project Name",
+        "subtitle": "Project Type",
+        "text": "Text\nText\nText",
+        "linkUrl": "http://url.ch/",
+        "linkText": "Link",
+        "creditTitle1": "Titel Credit1",
+        "creditTitle2": "Titel Credit2",
+        "creditTitle3": "Titel Credit3",
+        "creditTitle4": "Titel Credit4"
+      }
+    },
+    "jetpackMarshmallow": {
+      "en": {
+        "title": "Jetpack Marshmallow",
+        "subtitle": "Game",
+        "text": "Jetpack Marshmallow is a short one-button game I made with <a href='https://godotengine.org/' target='_blank'>Godot</a>.\nTap or click the screen to boost your jetpack. Roast your fellow mallows on your way to freedom or try to avoid hurting them for a peaceful run.",
+        "linkUrl": "https://vera-mueller.itch.io/jetpack-marshmallow",
+        "linkText": "Play Jetpack Marshmallo on itch.io",
+        "creditTitle1": "Game by",
+        "creditTitle2": "Music",
+        "creditTitle3": "Sound Effects"
+      },
+      "de": {
+        "title": "Project Name",
+        "subtitle": "Project Type",
+        "text": "Text\nText\nText",
+        "linkUrl": "http://url.ch/",
+        "linkText": "Link",
+        "creditTitle1": "Titel Credit1",
+        "creditTitle2": "Titel Credit2",
+        "creditTitle3": "Titel Credit3"
+      }
+    },
     "hungryFrog": {
       "en": {
         "title": "Hungry Frog",
         "subtitle": "Mini Game",
-        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. To win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
+        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. \nTo win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
         "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
         "linkText": "Play Hungry Frog on itch.io",
+        "linkUrl2": "https://editor.p5js.org/vera-mueller/sketches/jrdsM1s6Z",
+        "linkText2": "Code on p5js",
         "creditTitle1": "Game by",
         "creditTitle2": "Sound Effects"
       },
       "de": {
         "title": "Hungry Frog",
         "subtitle": "Mini Game",
-        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. To win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
+        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. \nTo win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
         "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
         "linkText": "Play Hungry Frog on itch.io",
+        "linkUrl2": "https://editor.p5js.org/vera-mueller/sketches/jrdsM1s6Z",
+        "linkText2": "Code on p5js",
         "creditTitle1": "Game by",
         "creditTitle2": "Sound Effects"
       }
     }
+  },
+  "about": {
+    "en": {
+      "title": "Vera Müller",
+      "subtitle": "Motion Design, Code, Animation, Game Design",
+      "text": "Hey, I’m Vera and I like to create playful, interactive things. I’m based in Wädenswil, Switzerland.",
+      "contact": "Click to send mail"
+    },
+    "de": { "title": "...", "subtitle": "...", "text": "...", "contact": "..." }
   }
 }

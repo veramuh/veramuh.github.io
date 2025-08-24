@@ -26,7 +26,7 @@ const smallImgs = [
         <div class="title">{{ texts.projects[projectName][lang].title }}</div>
         <div class="subtitle">{{ texts.projects[projectName][lang].subtitle }}</div>
         <div class="divider-line"></div>
-        <div class="text">{{ texts.projects[projectName][lang].text }}</div>
+        <div class="text" v-html="texts.projects[projectName][lang].text"></div>
         <div class="divider-small"></div>
         <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
           texts.projects[projectName][lang].linkText }}</a>

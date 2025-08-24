@@ -10,7 +10,6 @@ const { currentImg, openLightbox, closeLightbox } = useLightbox()
 import frog1 from '../../assets/project-imgs/hungry-frog/hungry-frog1.png'
 import frog2 from '../../assets/project-imgs/hungry-frog/hungry-frog2.png'
 import frog3 from '../../assets/project-imgs/hungry-frog/hungry-frog3.png'
-// import frog4 from '../../assets/project-imgs/hungry-frog/hungry-frog4.png'
 import frog5 from '../../assets/project-imgs/hungry-frog/hungry-frog5.png'
 import frogVid from '../../assets/project-imgs/hungry-frog/hungry-frog.mp4'
 
@@ -34,7 +33,9 @@ const smallImgs = [
         <div class="text" v-html="texts.projects[projectName][lang].text"></div>
         <div class="divider-small"></div>
         <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
-          texts.projects[projectName][lang].linkText }}</a>
+          texts.projects[projectName][lang].linkText }}</a><br>
+        <a :href="texts.projects[projectName][lang].linkUrl2" target="_blank">{{
+          texts.projects[projectName][lang].linkText2 }}</a>
       </div>
       <div class="divider-small"></div>
       <div class="small-img-container">
@@ -55,7 +56,7 @@ const smallImgs = [
         </div>
         <div class="credit">
           <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle2 }}</div>
-          <a href="https://sfxr.me/" target="_blank" class="text">sfxr</a>
+          <a href="https://sfxr.me/" target="_blank" class="text">jsfxr</a>
         </div>
       </div>
     </div>

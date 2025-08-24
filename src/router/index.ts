@@ -5,6 +5,8 @@ import Playground from "../views/Playground.vue";
 import About from "../views/About.vue";
 import ProjectTemplate from "../views/projects/ProjectTemplate.vue";
 import HungryFrog from "../views/projects/HungryFrog.vue";
+import JetpackMarshmallow from "../views/projects/JetpackMarshmallow.vue";
+import Lilu26 from "../views/projects/Lilu26.vue";
 
 const routes = [
   // Fallback:
@@ -27,6 +29,16 @@ const routes = [
     path: "/hungry-frog",
     name: "Hungry Frog",
     component: HungryFrog,
+  },
+  {
+    path: "/jetpack-marshmallow",
+    name: "Jetpack Marshmallow",
+    component: JetpackMarshmallow,
+  },
+  {
+    path: "/wobbly-x-lilu",
+    name: "Wobbly x Lilu",
+    component: Lilu26,
   },
 ];
 
