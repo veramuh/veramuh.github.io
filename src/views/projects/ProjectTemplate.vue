@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const project = "projectTemplate";
-
-import testImg from '../../assets/project-imgs/jetpack-marshmallow/jetpack-marshmallow.jpg'
+const projectName = "projectTemplate";
 import texts from '../../assets/txts.json';
-const lang = ref<'en' | 'de'>('en')
+const lang = ref<'en' | 'de'>('en');
+import { useLightbox } from '../../composables/useLightbox'
+const { currentImg, openLightbox, closeLightbox } = useLightbox()
+
+// Medias
+import testImg from '../../assets/project-imgs/jetpack-marshmallow/jetpack-marshmallow.jpg'
+
+const smallImgs = [
+  testImg, testImg, testImg, testImg,
+];
 </script>
 
 <template>
@@ -16,43 +23,47 @@ const lang = ref<'en' | 'de'>('en')
       </video> -->
       <div class="divider-medium"></div>
       <div class="text">
-        <div class="title">{{ texts.projects[project][lang].title }}</div>
-        <div class="subtitle">{{ texts.projects[project][lang].subtitle }}</div>
+        <div class="title">{{ texts.projects[projectName][lang].title }}</div>
+        <div class="subtitle">{{ texts.projects[projectName][lang].subtitle }}</div>
         <div class="divider-line"></div>
-        <div class="text">{{ texts.projects[project][lang].text }}</div>
+        <div class="text">{{ texts.projects[projectName][lang].text }}</div>
         <div class="divider-small"></div>
-        <a :href="texts.projects[project][lang].linkUrl" target="_blank">{{
-          texts.projects[project][lang].linkText }}</a>
+        <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
+          texts.projects[projectName][lang].linkText }}</a>
       </div>
       <div class="divider-small"></div>
       <div class="small-img-container">
-        <div class="small-img"><img :src="testImg"></img></div>
-        <div class="small-img"><img :src="testImg"></img></div>
-        <div class="small-img"><img :src="testImg"></img></div>
-        <div class="small-img"><img :src="testImg"></img></div>
+        <div v-for="(img, i) in smallImgs" :key="i" class="small-img" @click="openLightbox(img)">
+          <img :src="img" />
+        </div>
+      </div>
+      <div v-if="currentImg" class="lightbox" @click="closeLightbox">
+        <img :src="currentImg" class="lightbox-img" />
       </div>
       <div class="divider-big"></div>
       <div class="title">Credits</div>
       <div class="divider-line"></div>
       <div class="credits">
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[project][lang].creditTitle1 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle1 }}</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[project][lang].creditTitle2 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle2 }}</div>
           <div class="text">Name Surname</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[project][lang].creditTitle3 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle3 }}</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[project][lang].creditTitle4 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle4 }}</div>
           <div class="text">Name Surname</div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped></style>
