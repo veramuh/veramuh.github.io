@@ -45,20 +45,20 @@ const smallImgs = [
       <div class="divider-line"></div>
       <div class="credits">
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle1 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit1 }}</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle2 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit2 }}</div>
           <div class="text">Name Surname</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle3 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit3 }}</div>
           <div class="text">Name Surname</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle4 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit4 }}</div>
           <div class="text">Name Surname</div>
         </div>
       </div>

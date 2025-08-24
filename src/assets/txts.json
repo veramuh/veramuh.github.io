@@ -7,10 +7,11 @@
         "text": "Text\nText\nText",
         "linkUrl": "http://url.ch/",
         "linkText": "Link",
-        "creditTitle1": "Title Credit1",
-        "creditTitle2": "Title Credit2",
-        "creditTitle3": "Title Credit3",
-        "creditTitle4": "Title Credit4"
+        "creditsTitle": "Credits",
+        "credit1": "Title Credit1",
+        "credit2": "Title Credit2",
+        "credit3": "Title Credit3",
+        "credit4": "Title Credit4"
       },
       "de": {
         "title": "Project Name",
@@ -18,46 +19,60 @@
         "text": "Text\nText\nText",
         "linkUrl": "http://url.ch/",
         "linkText": "Link",
-        "creditTitle1": "Titel Credit1",
-        "creditTitle2": "Titel Credit2",
-        "creditTitle3": "Titel Credit3",
-        "creditTitle4": "Titel Credit4"
+        "creditsTitle": "Credits",
+        "credit1": "Title Credit1",
+        "credit2": "Title Credit2",
+        "credit3": "Title Credit3",
+        "credit4": "Title Credit4"
       }
     },
     "WobblyXLilu": {
       "en": {
         "title": "Wobbly x Lilu",
         "subtitle": "Interactive Installation",
-        "text": "Text\nText\nText",
+        "text1": "Projected on a wall, four inflatable wobbly tube dudes are sleeping. Up to four players step in front of the installation and start waving their arms. The virtual tube dudes react to these motions and start to mirror them. The more movement, the livelier the background becomes: Lucerne’s night awakens. Houses start to wiggle, the Water Tower dances, and the whole city begins to sway.",
+        "title2": "Story and Game Design",
+        "text2": "The story is playful: \"Dance, and the city will dance with you.\" \nIt’s meant to inspire kids and their parents to move freely, be silly, and enjoy themselves. \nThe following images show an early storyboard and an initial design test:",
+        "title3": "Technical Concepts",
+        "text3": "The players movements are captured by a camera and interpreted real time by pose-recognition software. This happens at night, thus we need to work with infrared lights and IR-cams.",
+        "title4": "Prototypes",
+        "text4": "The first prototypes we created with <a class='camouflagedLink' href='https://editor.p5js.org/ml5/sketches/hMN9GdrO3' target='_blank'>p5js</a>, and <a class='camouflagedLink' href='https://docs.ml5js.org/#/reference/bodypose' target='_blank'>ml5</a>, a pre-trained pose estimation model. We needed to test if it's possible to have four players at the same time:",
         "linkUrl": "https://lichtfestivalluzern.ch/en/",
         "linkText": "Light Festival Lucerne",
-        "creditTitle1": "Title Credit1",
-        "creditTitle2": "Title Credit2",
-        "creditTitle3": "Title Credit3",
-        "creditTitle4": "Title Credit4"
+        "creditsTitle": "Credits",
+        "credit1": "Project Lead, Design, Animation",
+        "credit2": "Technical Lead, Sound",
+        "credit3": "Gamedesign"
       },
       "de": {
-        "title": "Project Name",
-        "subtitle": "Project Type",
-        "text": "Text\nText\nText",
-        "linkUrl": "http://url.ch/",
-        "linkText": "Link",
-        "creditTitle1": "Titel Credit1",
-        "creditTitle2": "Titel Credit2",
-        "creditTitle3": "Titel Credit3",
-        "creditTitle4": "Titel Credit4"
+        "title": "Wobbly x Lilu",
+        "subtitle": "Interactive Installation",
+        "text1": "Projected on a wall, four inflatable wobbly tube dudes are sleeping. Up to four players step in front of the installation and start waving their arms. The virtual tube dudes react to these motions and start to mirror them. The more movement, the livelier the background becomes: Lucerne’s night awakens. Houses start to wiggle, the Water Tower dances, and the whole city begins to sway.",
+        "title2": "Story and Game Design",
+        "text2": "Following Images contain an early Storyboard and a first Design Test:",
+        "title3": "Technical Concepts",
+        "text3": "The players movements are captured by a camera and interpreted real time by pose-recognition software. This happens at night, thus we need to work with infrared lights and IR-cams",
+        "title4": "Prototypes",
+        "text4": "The first working prototypes we created with <a class='camouflagedLink' href='https://editor.p5js.org/ml5/sketches/hMN9GdrO3' target='_blank'>p5js</a>, and <a class='camouflagedLink' href='https://docs.ml5js.org/#/reference/bodypose' target='_blank'>ml5</a>, a pre-trained pose estimation model",
+        "linkUrl": "https://lichtfestivalluzern.ch/en/",
+        "linkText": "Light Festival Lucerne",
+        "creditsTitle": "Credits",
+        "credit1": "Project Lead, Design, Animation",
+        "credit2": "Technical Lead, Sound",
+        "credit3": "Gamedesign"
       }
     },
     "jetpackMarshmallow": {
       "en": {
         "title": "Jetpack Marshmallow",
         "subtitle": "Game",
-        "text": "Jetpack Marshmallow is a short one-button game I made with <a href='https://godotengine.org/' target='_blank'>Godot</a>.\nTap or click the screen to boost your jetpack. Roast your fellow mallows on your way to freedom or try to avoid hurting them for a peaceful run.",
+        "text": "Jetpack Marshmallow is a short one-button game I made with <a class='camouflagedLink' href='https://godotengine.org/' target='_blank'>Godot</a>.\nTap or click the screen to boost your jetpack. Roast your fellow mallows on your way to freedom or try to avoid hurting them for a peaceful run.",
         "linkUrl": "https://vera-mueller.itch.io/jetpack-marshmallow",
         "linkText": "Play Jetpack Marshmallo on itch.io",
-        "creditTitle1": "Game by",
-        "creditTitle2": "Music",
-        "creditTitle3": "Sound Effects"
+        "creditsTitle": "Credits",
+        "credit1": "Game by",
+        "credit2": "Music",
+        "credit3": "Sound Effects"
       },
       "de": {
         "title": "Project Name",
@@ -65,22 +80,24 @@
         "text": "Text\nText\nText",
         "linkUrl": "http://url.ch/",
         "linkText": "Link",
-        "creditTitle1": "Titel Credit1",
-        "creditTitle2": "Titel Credit2",
-        "creditTitle3": "Titel Credit3"
+        "creditsTitle": "Credits",
+        "credit1": "Titel Credit1",
+        "credit2": "Titel Credit2",
+        "credit3": "Titel Credit3"
       }
     },
     "hungryFrog": {
       "en": {
         "title": "Hungry Frog",
         "subtitle": "Mini Game",
-        "text": "Hungry Frog is a small clicker game I made with <a href='https://p5js.org' target='_blank'>p5.js</a>. \nTo win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
+        "text": "Hungry Frog is a small clicker game I made with <a class='camouflagedLink' href='https://p5js.org' target='_blank'>p5.js</a>. \nTo win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
         "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
         "linkText": "Play Hungry Frog on itch.io",
         "linkUrl2": "https://editor.p5js.org/vera-mueller/sketches/jrdsM1s6Z",
         "linkText2": "Code on p5js",
-        "creditTitle1": "Game by",
-        "creditTitle2": "Sound Effects"
+        "creditsTitle": "Credits",
+        "credit1": "Game by",
+        "credit2": "Sound Effects"
       },
       "de": {
         "title": "Hungry Frog",
@@ -90,8 +107,9 @@
         "linkText": "Play Hungry Frog on itch.io",
         "linkUrl2": "https://editor.p5js.org/vera-mueller/sketches/jrdsM1s6Z",
         "linkText2": "Code on p5js",
-        "creditTitle1": "Game by",
-        "creditTitle2": "Sound Effects"
+        "creditsTitle": "Credits",
+        "credit1": "Game by",
+        "credit2": "Sound Effects"
       }
     }
   },

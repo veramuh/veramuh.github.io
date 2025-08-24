@@ -47,19 +47,19 @@ const smallImgs = [
         <img :src="currentImg" class="lightbox-img" />
       </div>
       <div class="divider-big"></div>
-      <div class="title">Credits</div>
+      <div class="title">{{ texts.projects[projectName][lang].creditsTitle }}</div>
       <div class="divider-line"></div>
       <div class="credits">
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle1 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit1 }}</div>
           <div class="text">Vera Müller</div>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle2 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit2 }}</div>
           <a href="https://suno.com/" target="_blank" class="text">Suno</a>
         </div>
         <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].creditTitle3 }}</div>
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit3 }}</div>
           <a href="https://sfxr.me/" target="_blank" class="text">jsfxr</a>
         </div>
       </div>
