@@ -35,7 +35,7 @@ const designImgs = [
         <div class="subtitle">{{ texts.projects[projectName][lang].subtitle }}</div>
         <div class="divider-line"></div>
         <div class="text">{{ texts.projects[projectName][lang].text1 }}</div>
-        <div class="divider-big"></div>
+        <div class="divider-large"></div>
         <div class="title">{{ texts.projects[projectName][lang].title2 }}</div>
         <div class="divider-line"></div>
         <div class="text">{{ texts.projects[projectName][lang].text2 }}</div>
@@ -45,7 +45,7 @@ const designImgs = [
             <img :src="img" />
           </div>
         </div>
-        <div class="divider-big"></div>
+        <div class="divider-large"></div>
         <div class="title">{{ texts.projects[projectName][lang].title3 }}</div>
         <div class="divider-line"></div>
         <div class="text">{{ texts.projects[projectName][lang].text3 }}</div>
@@ -58,20 +58,22 @@ const designImgs = [
         <div v-if="currentImg" class="lightbox" @click="closeLightbox">
           <img :src="currentImg" class="lightbox-img" />
         </div>
-        <div class="divider-big"></div>
+        <div class="divider-large"></div>
         <div class="title">{{ texts.projects[projectName][lang].title4 }}</div>
         <div class="divider-line"></div>
         <div class="text" v-html="texts.projects[projectName][lang].text4"></div>
         <div class="divider-small"></div>
         <video controls class="big-vid" loop muted playsinline>
           <source :src="prototype01" type="video/mp4" />
-        </video><video controls class="big-vid" loop muted playsinline>
+        </video>
+        <!-- <video controls class="big-vid" loop muted playsinline>
           <source :src="prototype02" type="video/mp4" />
-        </video><video controls class="big-vid" loop muted playsinline>
+        </video> -->
+        <video controls class="big-vid" loop muted playsinline>
           <source :src="prototype03" type="video/mp4" />
         </video>
       </div>
-      <div class="divider-medium"></div>
+      <div class="divider-large"></div>
       <div class="title">{{ texts.projects[projectName][lang].creditsTitle }}</div>
       <div class="divider-line"></div>
       <div class="credits">
