@@ -6,7 +6,7 @@ import About from "../views/About.vue";
 import ProjectTemplate from "../views/projects/ProjectTemplate.vue";
 import HungryFrog from "../views/projects/HungryFrog.vue";
 import JetpackMarshmallow from "../views/projects/JetpackMarshmallow.vue";
-import Lilu26 from "../views/projects/Lilu26.vue";
+import Lilu26 from "../views/projects/WobblyXLilu.vue";
 
 const routes = [
   // Fallback:
