@@ -9,7 +9,7 @@ const domain = "gmail";
 const suffix = "com";
 const snd = ref('');
 const href = ref('#');
-const lang = ref<'en' | 'de'>('en')
+const lang = ref<'en'>('en');
 
 function mailcombi() {
   snd.value = `${first}.${last}@${domain}.${suffix}`;

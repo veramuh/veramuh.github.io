@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 const projectName = "hungryFrog";
 import texts from '../../assets/txts.json';
-const lang = ref<'en' | 'de'>('en');
+const lang = ref<'en'>('en');
 import { useLightbox } from '../../composables/useLightbox'
 const { currentImg, openLightbox, closeLightbox } = useLightbox()
 
@@ -32,10 +32,13 @@ const smallImgs = [
         <div class="divider-line"></div>
         <div class="text" v-html="texts.projects[projectName][lang].text"></div>
         <div class="divider-small"></div>
-        <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
-          texts.projects[projectName][lang].linkText }}</a><br>
+        <!-- <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
+          texts.projects[projectName][lang].linkText }}</a><br> -->
+
+        <iframe src="https://editor.p5js.org/vera-mueller/full/ixxFsuXYA"></iframe>
         <a :href="texts.projects[projectName][lang].linkUrl2" target="_blank">{{
           texts.projects[projectName][lang].linkText2 }}</a>
+
       </div>
       <div class="divider-small"></div>
       <div class="small-img-container">
@@ -62,3 +65,14 @@ const smallImgs = [
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+iframe {
+  border: none;
+
+  width: 40vw;
+  min-width: 300px;
+  max-width: 700px;
+  height: 50vh;
+}
+</style>

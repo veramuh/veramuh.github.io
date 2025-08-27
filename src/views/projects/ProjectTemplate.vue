@@ -2,7 +2,8 @@
 import { ref } from 'vue';
 const projectName = "projectTemplate";
 import texts from '../../assets/txts.json';
-const lang = ref<'en' | 'de'>('en');
+// const lang = ref<'en' | 'de'>('en');
+const lang = ref<'en'>('en');
 import { useLightbox } from '../../composables/useLightbox'
 const { currentImg, openLightbox, closeLightbox } = useLightbox()
 
