@@ -32,6 +32,9 @@ jobs:
       - name: Build project
         run: pnpm build
 
+      - name: Add CNAME
+        run: echo "vera-mueller.ch" > dist/CNAME
+
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
