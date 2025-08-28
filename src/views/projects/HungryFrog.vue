@@ -35,6 +35,8 @@ const smallImgs = [
         <!-- <a :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
           texts.projects[projectName][lang].linkText }}</a><br> -->
 
+        <!-- TODO self host instead of iframe -->
+        <!-- TODO maybe fix sound on mobile -->
         <iframe src="https://editor.p5js.org/vera-mueller/full/ixxFsuXYA"></iframe>
         <a :href="texts.projects[projectName][lang].linkUrl2" target="_blank">{{
           texts.projects[projectName][lang].linkText2 }}</a>

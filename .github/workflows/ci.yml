@@ -33,7 +33,7 @@ jobs:
         run: pnpm build
 
       - name: Add CNAME
-        run: echo "vera-mueller.ch" > dist/CNAME
+        run: echo "www.vera-mueller.ch" > dist/CNAME
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
