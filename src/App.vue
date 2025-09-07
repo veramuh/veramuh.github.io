@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Logo from './components/Logo.vue'
 
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -11,7 +12,10 @@ function scrollToTop() {
 </script>
 
 <template>
-  <div class="outerWrap">
+  <BlankLayout v-if="$route.meta.layout === 'blank'">
+    <RouterView />
+  </BlankLayout>
+  <div class="outerWrap" v-else>
     <div class="portfolio">
       <div class="top">
         <Logo class="logo"></Logo>

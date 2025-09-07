@@ -8,6 +8,7 @@ import HungryFrog from "../views/projects/HungryFrog.vue";
 import JetpackMarshmallow from "../views/projects/JetpackMarshmallow.vue";
 import Wobbly from "../views/projects/WobblyXLilu.vue";
 import Klick from "../views/projects/Klick.vue";
+import KlickPopup from "../views/projects/KlickPopup.vue";
 
 const routes = [
   // Fallback:
@@ -45,6 +46,12 @@ const routes = [
     path: "/klick",
     name: "Klick",
     component: Klick,
+  },
+  {
+    path: "/klick-popup",
+    name: "Klick Game",
+    component: KlickPopup,
+    meta: { layout: "blank" },
   },
 ];
 

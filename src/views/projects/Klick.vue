@@ -1,38 +1,46 @@
 <script setup lang="ts">
-// import { ref } from 'vue';
-// const projectName = "projectName";
-// import texts from '../../assets/txts.json';
-// const lang = ref<'en'>('en');
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
-// Medias
-import title from '../../assets/project-imgs/klick/klick01.jpg'
+function openGame() {
+  console.log("hoi");
+  let params = `width=200,height=200,left=800,top=300,`;
+  const url = router.resolve('/klick-popup').href
+  window.open(url, 'hoi', params)
+}
 </script>
+
 
 <template>
   <div class="page">
-    <button onclick="myFunction()">Hello</button>
-
     <div class="center">
-
-      <div class="big-img"><img :src="title"></img></div>
-      <!-- <video class="big-vid" autoplay loop muted playsinline>
-        <source :src="testVid" type="video/mp4" />
-      </video> -->
+      <button @click="openGame">Hello</button>
       <div class="divider-medium"></div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+button {
+  padding: 15px 32px;
+  font-size: large;
+}
+
 .page {
-  border: 1px red solid;
+  @extend .debug;
 }
 
 .center {
-  border: 1px red solid;
+  @extend .debug;
+  display: flex;
+  justify-content: center;
 }
 
 button {
-  border: 1px red solid;
+  @extend .debug;
+}
+
+.debug {
+  border: 0px red solid;
 }
 </style>
