@@ -11,7 +11,7 @@ import frog1 from '../../assets/project-imgs/hungry-frog/hungry-frog1.png'
 import frog2 from '../../assets/project-imgs/hungry-frog/hungry-frog2.png'
 import frog3 from '../../assets/project-imgs/hungry-frog/hungry-frog3.png'
 import frog5 from '../../assets/project-imgs/hungry-frog/hungry-frog5.png'
-import frogVid from '../../assets/project-imgs/hungry-frog/hungry-frog.mp4'
+// import frogVid from '../../assets/project-imgs/hungry-frog/hungry-frog.mp4'
 
 const smallImgs = [
   frog1, frog2, frog3, frog5,
