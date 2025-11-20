@@ -16,6 +16,7 @@ import prototype01 from '../../assets/project-imgs/wobblyXlilu/prototype01.mp4'
 import prototype03 from '../../assets/project-imgs/wobblyXlilu/prototype03.mp4'
 import storyboard01 from '../../assets/project-imgs/wobblyXlilu/storyboard01.jpg'
 import styleWobblies01 from '../../assets/project-imgs/wobblyXlilu/style-wobblies01.jpg'
+import kreiselwipp from '../../assets/project-imgs/wobblyXlilu/kreisel-wipp.gif'
 
 const conceptImgs = [
   concept01, concept02
@@ -99,8 +100,14 @@ const designImgs = [
       <a class="text" :href="texts.projects[projectName][lang].linkUrl" target="_blank">{{
         texts.projects[projectName][lang].linkText }}</a>
     </div>
-
+    <div class=" divider-small">
+    </div>
+    <img class="kreisel" :src="kreiselwipp"></img>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.kreisel {
+  width: 8vh;
+}
+</style>

@@ -66,9 +66,9 @@
         "subtitle": "Mini Game",
         "text": "Hungry Frog is a small clicker game I made with <a class='camouflagedLink' href='https://p5js.org' target='_blank'>p5.js</a>. \nTo win, you have to eat 10 flies by clicking on them. With every click the fly becomes trickier to catch.",
         "linkUrl": "https://vera-mueller.itch.io/hungry-frog",
-        "linkText": "Play Hungry Frog on itch.io (→ just mouse, not playable on phone)",
-        "linkUrl2": "https://editor.p5js.org/vera-mueller/sketches/ixxFsuXYA",
-        "linkText2": "Code on p5js",
+        "linkText": "Play Hungry Frog on itch.io",
+        "linkUrl2": "https://editor.p5js.org/vera-mueller/full/ixxFsuXYA",
+        "linkText2": "Play on p5js",
         "creditsTitle": "Credits",
         "credit1": "Game by",
         "credit2": "Sound Effects"
