@@ -6,7 +6,7 @@ import About from "../views/About.vue";
 import ProjectTemplate from "../views/projects/ProjectTemplate.vue";
 import HungryFrog from "../views/projects/HungryFrog.vue";
 import JetpackMarshmallow from "../views/projects/JetpackMarshmallow.vue";
-import Wobbly from "../views/projects/WobblyXLilu.vue";
+import Wobbly from "../views/projects/Wobbly.vue";
 import Klick from "../views/projects/Klick.vue";
 import KlickPopup from "../views/projects/KlickPopup.vue";
 
@@ -38,8 +38,8 @@ const routes = [
     component: JetpackMarshmallow,
   },
   {
-    path: "/wobbly-x-lilu",
-    name: "Wobbly x Lilu",
+    path: "/wobbly",
+    name: "Wobbly",
     component: Wobbly,
   },
   {

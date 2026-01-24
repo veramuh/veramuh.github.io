@@ -1,22 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const projectName = "WobblyXLilu";
+const projectName = "Wobbly";
 import texts from '../../assets/txts.json';
 const lang = ref<'en'>('en');
 import { useLightbox } from '../../composables/useLightbox'
 const { currentImg, openLightbox, closeLightbox } = useLightbox()
 
 // Medias
-import concept01 from '../../assets/project-imgs/wobblyXlilu/concept01.jpg'
-import concept02 from '../../assets/project-imgs/wobblyXlilu/concept02.jpg'
-// import concept03 from '../../assets/project-imgs/wobblyXlilu/concept03.gif'
-// import maskottchen01 from '../../assets/project-imgs/wobblyXlilu/maskottchen01.png'
-import prototype01 from '../../assets/project-imgs/wobblyXlilu/prototype01.mp4'
-// import prototype02 from '../../assets/project-imgs/wobblyXlilu/prototype02.mp4'
-import prototype03 from '../../assets/project-imgs/wobblyXlilu/prototype03.mp4'
-import storyboard01 from '../../assets/project-imgs/wobblyXlilu/storyboard01.jpg'
-import styleWobblies01 from '../../assets/project-imgs/wobblyXlilu/style-wobblies01.jpg'
-import kreiselwipp from '../../assets/project-imgs/wobblyXlilu/kreisel-wipp.gif'
+import concept01 from '../../assets/project-imgs/wobbly/concept01.jpg'
+import concept02 from '../../assets/project-imgs/wobbly/concept02.jpg'
+import aftermovie from '../../assets/project-imgs/wobbly/wobbly-lilu-aftermovie.mp4'
+import prototype01 from '../../assets/project-imgs/wobbly/prototype01.mp4'
+import prototype03 from '../../assets/project-imgs/wobbly/prototype03.mp4'
+import storyboard01 from '../../assets/project-imgs/wobbly/storyboard01.jpg'
+import styleWobblies01 from '../../assets/project-imgs/wobbly/style-wobblies01.jpg'
+import kreiselwipp from '../../assets/project-imgs/wobbly/kreisel-wipp.gif'
 
 const conceptImgs = [
   concept01, concept02
@@ -29,13 +27,24 @@ const designImgs = [
 <template>
   <div class="page">
     <div class="center">
-      <div class="big-img"><img :src="concept01"></img></div>
+
+      <video controls class="big-vid-contain" loop muted playsinline>
+        <source :src="aftermovie" type="video/mp4" />
+      </video>
+      <div class="divider-small"></div>
+
+      <div class="text">This is the aftermovie of "Wobbly", an interactive dance project that was shown at
+        <span><a class="camouflagedLink" href='https://lichtfestivalluzern.ch' target=" _blank">Lilu
+            Lightfestival Lucerne</a></span> in January 2026.
+      </div>
       <div class="divider-medium"></div>
       <div class="text">
         <div class="title">{{ texts.projects[projectName][lang].title }}</div>
         <div class="subtitle">{{ texts.projects[projectName][lang].subtitle }}</div>
         <div class="divider-line"></div>
         <div class="text">{{ texts.projects[projectName][lang].text1 }}</div>
+        <div class="divider-medium"></div>
+        <div class="big-img"><img :src="concept01"></img></div>
         <div class="divider-large"></div>
         <div class="title">{{ texts.projects[projectName][lang].title2 }}</div>
         <div class="divider-line"></div>
@@ -80,18 +89,18 @@ const designImgs = [
       <div class="credits">
         <div class="credit">
           <div class="text-bold">{{ texts.projects[projectName][lang].credit1 }}</div>
-          <div class="text">Vera Müller</div>
-        </div>
-        <div class="credit">
-          <div class="text-bold">{{ texts.projects[projectName][lang].credit2 }}</div>
           <div class="text"><a class="camouflagedLink" href='https://fusion-robot.ch' target=" _blank">Beat Kunz</a>
           </div>
+        </div>
+        <div class=" divider-small"> </div>
+        <div class="credit">
+          <div class="text-bold">{{ texts.projects[projectName][lang].credit2 }}</div>
+          <div class="text">Vera Müller</div>
         </div>
         <div class="credit">
           <div class="text-bold">{{ texts.projects[projectName][lang].credit3 }}</div>
           <div class="text">
-            <a class="camouflagedLink" href='https://fusion-robot.ch' target=" _blank">Beat Kunz</a>
-            <span> & Vera Müller</span>
+            <a class="camouflagedLink" href='https://www.andibissig.com/' target=" _blank">Andi Bissig</a>
           </div>
         </div>
       </div>

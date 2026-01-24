@@ -10,31 +10,36 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Light.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Poppins-Light.woff2") format("woff2"),
     url("./assets/fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
     url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Medium.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Poppins-Medium.woff2") format("woff2"),
     url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Bold.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Poppins-Bold.woff2") format("woff2"),
     url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/Poppins-Black.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Poppins-Black.woff2") format("woff2"),
     url("./assets/fonts/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
 }
@@ -170,6 +175,10 @@ img {
 .big-vid {
   @extend .big-img;
   object-fit: cover;
+}
+.big-vid-contain {
+  @extend .big-img;
+  object-fit: contain;
 }
 
 .small-img-container {

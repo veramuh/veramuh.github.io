@@ -14,23 +14,23 @@
         "credit4": "Title Credit4"
       }
     },
-    "WobblyXLilu": {
+    "Wobbly": {
       "en": {
-        "title": "Wobbly x Lilu",
+        "title": "Wobbly",
         "subtitle": "Interactive Installation",
-        "text1": "Projected on a wall, four inflatable wobbly tube dudes are sleeping. Up to four players step in front of the installation and start waving their arms. The virtual tube dudes react to these motions and start to mirror them. The more movement, the livelier the background becomes: Lucerne’s night awakens. Houses start to wiggle, the Water Tower dances, and the whole city begins to sway.",
+        "text1": "Projected on a wall, four inflatable wobbly tube dudes are sleeping. Two players step in front of the installation and start waving their arms. The virtual tube dudes react to these motions and start to mirror them. The more movement, the livelier the background becomes: Lucerne’s night awakens. The Water Tower wiggles, the Lion Monument starts to dance, and the whole city begins to sway.",
         "title2": "Story and Game Design",
         "text2": "The story is playful: \"Dance, and the city will dance with you.\" \nIt’s meant to inspire kids and their parents to move freely, be silly, and enjoy themselves. \nThe following images show an early storyboard and an initial design test:",
         "title3": "Technical Concepts",
         "text3": "The players movements are captured by a camera and interpreted real time by pose-recognition software. This happens at night, thus we need to work with infrared lights and IR-cams.",
         "title4": "Prototypes",
         "text4": "The first prototypes we created with <a class='camouflagedLink' href='https://editor.p5js.org/ml5/sketches/hMN9GdrO3' target='_blank'>p5js</a>, and <a class='camouflagedLink' href='https://docs.ml5js.org/#/reference/bodypose' target='_blank'>ml5</a>, a pre-trained pose estimation model. We needed to test if it's possible to have four players at the same time:",
-        "linkUrl": "https://lichtfestivalluzern.ch/en/",
+        "linkUrl": "https://lichtfestivalluzern.ch",
         "linkText": "Light Festival Lucerne",
         "creditsTitle": "Credits",
-        "credit1": "Project Lead, Design, Animation",
-        "credit2": "Technical Lead, Sound",
-        "credit3": "Gamedesign"
+        "credit1": "Game Development, Sound",
+        "credit2": "Game Design, Animation",
+        "credit3": "Music"
       }
     },
     "Klick": {
