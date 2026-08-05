@@ -9,6 +9,7 @@ import JetpackMarshmallow from "../views/projects/JetpackMarshmallow.vue";
 import Wobbly from "../views/projects/Wobbly.vue";
 import Klick from "../views/projects/Klick.vue";
 import KlickPopup from "../views/projects/KlickPopup.vue";
+import Stopwatch from "../views/projects/Stopwatch.vue";
 
 const routes = [
   // Fallback:
@@ -52,6 +53,13 @@ const routes = [
     name: "Klick Game",
     component: KlickPopup,
     meta: { layout: "blank" },
+  },
+
+  // Hidden mini-apps (no nav / project-grid entry)
+  {
+    path: "/stopwatch",
+    name: "Stopwatch",
+    component: Stopwatch,
   },
 ];
 
