@@ -66,7 +66,8 @@ function seoPages(): Plugin {
       this.emitFile({
         type: 'asset',
         fileName: 'robots.txt',
-        source: `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`,
+        // /cards ist privat: Google soll dort gar nicht erst crawlen (keine 404-/noindex-Meldungen in der Search Console)
+        source: `User-agent: *\nDisallow: /cards\n\nSitemap: ${SITE_URL}/sitemap.xml\n`,
       })
     },
   }
