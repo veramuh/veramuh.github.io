@@ -9,17 +9,18 @@ defineProps<{
 </script>
 
 <template>
-    <div class="wrapper">
-        <div class="tile" :style="{ borderWidth: border ? border + 'px' : '0' }"><img :src="image"
-                @click="$router.push(link ? link : '')" />
+    <RouterLink :to="link ?? '/'" class="wrapper camouflagedLink">
+        <div class="tile" :style="{ borderWidth: border ? border + 'px' : '0' }">
+            <img :src="image" :alt="title" />
         </div>
-        <div class="title">{{ title }}</div>
+        <h2 class="title">{{ title }}</h2>
         <div class="subtitle">{{ subtitle }}</div>
-    </div>
+    </RouterLink>
 </template>
 
 <style lang="scss" scoped>
 .wrapper {
+    display: block;
     margin-top: 2.3rem;
     width: 40vw;
     min-width: 300px;
@@ -42,7 +43,7 @@ defineProps<{
 }
 
 
-img:hover {
+.wrapper:hover img {
     transform-origin: center;
     transform: scale(1.02);
     transition: transform 0.3s;

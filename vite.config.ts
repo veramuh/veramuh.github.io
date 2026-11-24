@@ -22,6 +22,12 @@ function headFor(page?: PageMeta): string {
       `<meta property="og:type" content="website" />`,
       `<meta property="og:site_name" content="${esc(SITE_NAME)}" />`,
     )
+    if (page.image) {
+      tags.push(
+        `<meta property="og:image" content="${SITE_URL}${page.image}" />`,
+        `<meta name="twitter:card" content="summary_large_image" />`,
+      )
+    }
   } else {
     tags.push(`<meta name="robots" content="noindex" />`)
   }

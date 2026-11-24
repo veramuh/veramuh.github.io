@@ -24,12 +24,12 @@ const smallImgs = [
   <div class="page">
     <div class="center">
       <!-- <div class="big-img"><img :src="jetpackMarshmallowMobile"></img></div> -->
-      <video class="big-vid" autoplay loop muted playsinline>
+      <video class="big-vid" autoplay loop muted playsinline aria-label="Jetpack Marshmallow gameplay">
         <source :src="jetpackMarshmallowVid" type="video/mp4" />
       </video>
       <div class="divider-medium"></div>
       <div class="text">
-        <div class="title">{{ texts.projects[projectName][lang].title }}</div>
+        <h1 class="title">{{ texts.projects[projectName][lang].title }}</h1>
         <div class="subtitle">{{ texts.projects[projectName][lang].subtitle }}</div>
         <div class="divider-line"></div>
         <div class="text" v-html="texts.projects[projectName][lang].text"></div>
@@ -40,14 +40,14 @@ const smallImgs = [
       <div class="divider-small"></div>
       <div class="small-img-container">
         <div v-for="(img, i) in smallImgs" :key="i" class="small-img" @click="openLightbox(img)">
-          <img :src="img" />
+          <img :src="img" :alt="`${texts.projects[projectName][lang].title} – image ${i + 1}`" loading="lazy" />
         </div>
       </div>
       <div v-if="currentImg" class="lightbox" @click="closeLightbox">
-        <img :src="currentImg" class="lightbox-img" />
+        <img :src="currentImg" class="lightbox-img" alt="" />
       </div>
       <div class="divider-big"></div>
-      <div class="title">{{ texts.projects[projectName][lang].creditsTitle }}</div>
+      <h2 class="title">{{ texts.projects[projectName][lang].creditsTitle }}</h2>
       <div class="divider-line"></div>
       <div class="credits">
         <div class="credit">

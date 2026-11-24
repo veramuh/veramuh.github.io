@@ -24,7 +24,7 @@ function mailcombi() {
         <img :src="me" alt="vera">
         <div class="divider-small"></div>
         <div class="textblock">
-          <div class="title">{{ texts.about[lang].title }}</div>
+          <h1 class="title">{{ texts.about[lang].title }}</h1>
           <div class="subtitle">{{ texts.about[lang].subtitle }}</div>
           <div class="divider-line"></div>
           <div class="text">{{ texts.about[lang].text }}</div>

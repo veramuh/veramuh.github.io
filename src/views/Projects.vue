@@ -17,6 +17,7 @@ import frogTitle from '../assets/project-imgs/hungry-frog/hungry-frog0.png'
 
 <template>
   <div class="page">
+    <h1 class="visually-hidden">Vera Müller – Portfolio: Motion Design, Code, Animation, Game Design</h1>
     <!-- <ProjectTile :border="1" link="/project-template" :title="texts.projects.projectTemplate[lang].title"
       :subtitle="texts.projects.projectTemplate[lang].subtitle" :image="project1Img">
     </ProjectTile> -->

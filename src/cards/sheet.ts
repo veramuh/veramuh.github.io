@@ -2,7 +2,8 @@
 //
 // Aufbau des Sheets:
 //   Tab "Themen":  Spalte A = Namen der Themen-Tabs (der Tab-Name ist auch der Titel auf der Seite)
-//   Pro Thema ein Tab: Spalte A = Vorderseite (Frage), Spalte B = Rückseite (Antwort)
+//   Pro Thema ein Tab: Spalte A = Vorderseite (Frage), Spalte B = Rückseite (Antwort),
+//                      Spalte C (optional) = Bild-URL zur Frage
 //   Die erste Zeile jedes Tabs ist die Überschrift und wird ignoriert.
 //
 // Das Sheet muss freigegeben sein mit "Jeder mit dem Link: Betrachter".
@@ -21,7 +22,13 @@ export interface Topic {
 export interface Card {
   front: string;
   back: string;
+  /** Optional: Bild-URL aus Spalte C, wird zur Frage angezeigt */
+  image?: string;
 }
+
+// true, wenn zuletzt mindestens ein Tab aus der Offline-Kopie kam
+let offline = false;
+export const loadedOffline = () => offline;
 
 export function slugify(s: string): string {
   return s
@@ -75,15 +82,35 @@ async function fetchTab(tab: string): Promise<string[][]> {
   const notShared = new Error(
     'Das Google Sheet ist nicht erreichbar. Ist es mit „Jeder mit dem Link: Betrachter“ freigegeben?'
   );
-  let res: Response;
+  const cacheKey = `cards-cache-${tab}`;
+  let text: string;
   try {
-    res = await fetch(url);
-  } catch {
-    throw notShared;
+    let res: Response;
+    try {
+      res = await fetch(url);
+    } catch {
+      throw notShared;
+    }
+    if (!res.ok) throw new Error(`Tab "${tab}" konnte nicht geladen werden (${res.status})`);
+    text = await res.text();
+    if (text.trimStart().startsWith("<")) throw notShared; // Google-Loginseite statt CSV
+    try {
+      localStorage.setItem(cacheKey, text);
+    } catch {
+      /* Speicher voll oder gesperrt: dann eben ohne Offline-Kopie */
+    }
+  } catch (e) {
+    // Offline (z.B. im Zug): zuletzt geladene Kopie verwenden, falls vorhanden
+    let cached: string | null = null;
+    try {
+      cached = localStorage.getItem(cacheKey);
+    } catch {
+      /* ignore */
+    }
+    if (cached === null) throw e;
+    text = cached;
+    offline = true;
   }
-  if (!res.ok) throw new Error(`Tab "${tab}" konnte nicht geladen werden (${res.status})`);
-  const text = await res.text();
-  if (text.trimStart().startsWith("<")) throw notShared; // Google-Loginseite statt CSV
   const rows = parseCsv(text);
   return rows
     .slice(1) // Überschrift
@@ -116,6 +143,7 @@ const DEMO: Record<string, { title: string; cards: Card[] }> = {
 export const isDemo = () => !SHEET_ID;
 
 export async function loadTopics(): Promise<Topic[]> {
+  offline = false;
   if (isDemo()) {
     return Object.keys(DEMO).map((tab) => ({ title: DEMO[tab].title, tab, slug: slugify(tab) }));
   }
@@ -126,5 +154,11 @@ export async function loadTopics(): Promise<Topic[]> {
 export async function loadCards(tab: string): Promise<Card[]> {
   if (isDemo()) return DEMO[tab]?.cards ?? [];
   const rows = await fetchTab(tab);
-  return rows.filter((r) => r[1]).map(([front, back]) => ({ front, back }));
+  return rows
+    .filter((r) => r[1])
+    .map(([front, back, image]) => ({
+      front,
+      back,
+      image: image && /^https?:\/\//.test(image) ? image : undefined,
+    }));
 }

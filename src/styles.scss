@@ -6,6 +6,7 @@
   --font-active: black;
   --text: black;
   --red: rgb(255, 0, 195);
+  --cards-accent: #54b8d0; // Lernkarten
 }
 
 @font-face {
@@ -68,8 +69,8 @@ a.camouflagedLink:active {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   top: 0;
   left: 0;
   right: 0;
@@ -107,6 +108,21 @@ img {
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   color: var(--text);
 }
+h1.title,
+h2.title {
+  margin: 0;
+}
+
+// Für Screenreader & Google sichtbar, optisch versteckt
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .title2 {
   font-weight: 600;
   font-size: clamp(1.1rem, 1.2vw, 1.2rem);

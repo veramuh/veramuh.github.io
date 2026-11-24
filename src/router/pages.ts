@@ -12,6 +12,8 @@ export interface PageMeta {
   title: string;
   description: string;
   index: boolean;
+  /** Vorschaubild beim Teilen (WhatsApp, LinkedIn …), liegt in public/og/ */
+  image?: string;
 }
 
 export const pages: PageMeta[] = [
@@ -21,6 +23,7 @@ export const pages: PageMeta[] = [
     description:
       "Portfolio of Vera Müller: playful, interactive installations, games and animations from Switzerland.",
     index: true,
+    image: "/og/wobbly.jpg",
   },
   {
     path: "/about",
@@ -28,6 +31,7 @@ export const pages: PageMeta[] = [
     description:
       "Hey, I’m Vera and I like to create playful, interactive things. Motion design, code, animation and game design, based in Wädenswil, Switzerland.",
     index: true,
+    image: "/og/about.jpg",
   },
   {
     path: "/wobbly",
@@ -35,6 +39,7 @@ export const pages: PageMeta[] = [
     description:
       "Wobbly is an interactive projection for the Light Festival Lucerne: players wave their arms and four inflatable tube dudes – and the whole city – start to dance.",
     index: true,
+    image: "/og/wobbly.jpg",
   },
   {
     path: "/jetpack-marshmallow",
@@ -42,6 +47,7 @@ export const pages: PageMeta[] = [
     description:
       "Jetpack Marshmallow is a short one-button game made with Godot. Boost your jetpack and roast your fellow mallows on your way to freedom.",
     index: true,
+    image: "/og/jetpack-marshmallow.jpg",
   },
   {
     path: "/hungry-frog",
@@ -49,6 +55,7 @@ export const pages: PageMeta[] = [
     description:
       "Hungry Frog is a small clicker game made with p5.js: eat 10 flies – with every click they get trickier to catch.",
     index: true,
+    image: "/og/hungry-frog.jpg",
   },
 
   // Versteckt / unfertig: funktionieren, werden aber nicht indexiert

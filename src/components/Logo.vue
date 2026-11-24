@@ -3,13 +3,13 @@
 </script>
 
 <template>
-  <div class="logo" @click="$router.push('/projects')">
-    <img src="/tierli.svg" />
+  <RouterLink to="/projects" class="logo camouflagedLink" aria-label="Vera Müller – Portfolio, home">
+    <img src="/tierli.svg" alt="" />
     <div class=" text">
       <div class="name">Vera Müller</div>
       <div class="portfolio">Portfolio</div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <style lang="scss" scoped>

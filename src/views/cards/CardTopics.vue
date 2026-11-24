@@ -3,6 +3,18 @@ import { ref, onMounted } from "vue";
 import { loadTopics, isDemo, type Topic } from "../../cards/sheet";
 
 const topics = ref<Topic[]>([]);
+
+// Fortschritt pro Thema (wird beim Lernen auf diesem Gerät gespeichert)
+function progress(slug: string): string {
+  try {
+    const total = Number(localStorage.getItem(`cards-total-${slug}`));
+    if (!total) return "";
+    const known = (JSON.parse(localStorage.getItem(`cards-known-${slug}`) || "[]") as string[]).length;
+    return `${Math.min(known, total)} / ${total} kann ich`;
+  } catch {
+    return "";
+  }
+}
 const loading = ref(true);
 const error = ref("");
 
@@ -27,7 +39,8 @@ onMounted(async () => {
       <p v-else-if="!topics.length" class="hint">Noch keine Themen. Trage im Tab „Themen“ in Spalte A die Namen deiner Themen-Tabs ein.</p>
       <div v-else class="topics">
         <RouterLink v-for="t in topics" :key="t.slug" :to="`/cards/${t.slug}`" class="topic camouflagedLink">
-          {{ t.title }}
+          <span>{{ t.title }}</span>
+          <span v-if="progress(t.slug)" class="progress">{{ progress(t.slug) }}</span>
         </RouterLink>
       </div>
     </div>
@@ -51,6 +64,8 @@ onMounted(async () => {
 
 .topic {
   display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   align-items: center;
   justify-content: center;
   min-height: 6rem;
@@ -66,6 +81,12 @@ onMounted(async () => {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   }
+}
+
+.progress {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--font-inactive);
 }
 
 .hint {
