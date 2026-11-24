@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /cards
 
 Sitemap: https://www.vera-mueller.ch/sitemap.xml
