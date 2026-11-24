@@ -5,7 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/tierli.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veras Portfolio</title>
+    <title>Vera Müller</title>
+    <script>
+      // Alte Links mit Hash (/#/about) auf saubere URLs (/about) umschreiben
+      if (location.hash.indexOf("#/") === 0) {
+        history.replaceState(null, "", location.hash.slice(1));
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>
