@@ -45,7 +45,11 @@ function seoPages(): Plugin {
       const index = bundle['index.html']
       if (!index || index.type !== 'asset') throw new Error('seo-pages: index.html nicht gefunden')
       const html = String(index.source)
-      const withHead = (page?: PageMeta) => html.replace(/<title>[\s\S]*?<\/title>/, headFor(page))
+      const withHead = (page?: PageMeta) => {
+        let out = html.replace(/<title>[\s\S]*?<\/title>/, headFor(page))
+        if (page?.touchIcon) out = out.replace('href="/apple-touch-icon.png"', `href="${page.touchIcon}"`)
+        return out
+      }
 
       index.source = withHead(pages[0]) // Startseite "/" = Projects
       for (const page of pages) {
