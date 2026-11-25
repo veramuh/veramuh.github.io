@@ -6,7 +6,6 @@
 
 export const SITE_URL = "https://www.vera-mueller.ch";
 export const SITE_NAME = "Vera Müller";
-export const DEFAULT_TOUCH_ICON = "/apple-touch-icon.png";
 
 export interface PageMeta {
   path: string;
@@ -15,8 +14,6 @@ export interface PageMeta {
   index: boolean;
   /** Vorschaubild beim Teilen (WhatsApp, LinkedIn …), liegt in public/og/ */
   image?: string;
-  /** Eigenes Home-Bildschirm-Icon (statt Tierli), liegt in public/ */
-  touchIcon?: string;
 }
 
 export const pages: PageMeta[] = [
@@ -66,7 +63,7 @@ export const pages: PageMeta[] = [
   { path: "/project-template", title: "Project – Vera Müller", description: "", index: false },
   { path: "/klick", title: "Klick – Vera Müller", description: "", index: false },
   { path: "/klick-popup", title: "Klick – Vera Müller", description: "", index: false },
-  { path: "/stopwatch", title: "Stopwatch – Vera Müller", description: "", index: false, touchIcon: "/stopwatch-touch-icon.png" },
+  { path: "/stopwatch", title: "Stopwatch – Vera Müller", description: "", index: false },
   { path: "/cards", title: "Lernkarten", description: "", index: false },
   { path: "/cards/:topic", title: "Lernkarten", description: "", index: false },
 ];

@@ -12,7 +12,7 @@ import KlickPopup from "../views/projects/KlickPopup.vue";
 import Stopwatch from "../views/projects/Stopwatch.vue";
 import CardTopics from "../views/cards/CardTopics.vue";
 import Flashcards from "../views/cards/Flashcards.vue";
-import { findPage, SITE_NAME, SITE_URL, DEFAULT_TOUCH_ICON } from "./pages";
+import { findPage, SITE_NAME, SITE_URL } from "./pages";
 
 const routes = [
   // Fallback:
@@ -107,10 +107,6 @@ router.afterEach((to) => {
     "href",
     page?.index ? SITE_URL + page.path : null
   );
-  // Home-Bildschirm-Icon: Tierli, ausser die Seite hat ein eigenes (z.B. Stopwatch)
-  document.head
-    .querySelector('link[rel="apple-touch-icon"]')
-    ?.setAttribute("href", page?.touchIcon ?? DEFAULT_TOUCH_ICON);
 });
 
 export default router;
